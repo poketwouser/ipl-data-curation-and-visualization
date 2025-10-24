@@ -1,6 +1,8 @@
+import-ipynb
 pandas
 numpy
+selenium
+webdriver_manager
 matplotlib
 seaborn
 plotly
-streamlit
