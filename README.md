@@ -15,11 +15,6 @@ A production-ready IPL analytics platform with 13+ analytical modules, machine l
 - **Compare Seasons** — Multi-season analysis with animated trends
 - **All-Time Stats** — Historical leaderboards and era comparisons
 
-### Advanced Analytics
-- **ML Predictions** — XGBoost-based match outcome prediction (80%+ accuracy)
-- **Player Similarity** — AI-powered player discovery using cosine similarity
-- **Dream XI Builder** — Automatic team optimization with role constraints
-- **Advanced Analytics** — Win probability curves, momentum graphs, clutch index
 
 ## 🛠️ Technology Stack
 
@@ -35,10 +30,6 @@ A production-ready IPL analytics platform with 13+ analytical modules, machine l
 - NumPy — Numerical computations
 - Flask-Caching — Performance optimization with Redis
 
-**Machine Learning:**
-- scikit-learn — Preprocessing and Logistic Regression
-- XGBoost — Advanced match prediction
-- joblib — Model serialization
 
 ## 📋 Installation
 
@@ -78,16 +69,9 @@ docker run -p 8050:8050 ipl-dashboard
 1. **Season Overview** — Start with Season Overview tab to view tournament-level statistics
 2. **Search Players** — Use Player Cards tab to explore individual player performance
 3. **Match Analysis** — Navigate to Match Explorer to view detailed match scorecards
-4. **ML Predictions** — Use ML Predictions tab to forecast match outcomes
-5. **Dream XI** — Build custom teams with Dream XI Builder
 
 ## 📊 Data Structure
 
-### Synthetic Data (Demo)
-- **Matches**: 150 realistic matches covering 2008-2024
-- **Players**: 300+ players across 10 teams
-- **Deliveries**: Ball-by-ball data for selected matches
-- **Statistics**: Pre-computed season, venue, and player aggregates
 
 ### Integration with Real Data
 To use actual IPL data:
@@ -123,23 +107,6 @@ cache_config = {
 }
 ```
 
-## 📁 Project Structure
-
-```
-ipl_dashboard/
-├── app.py                    # Main Dash application
-├── requirements.txt          # Python dependencies
-├── Dockerfile               # Container configuration
-├── docker-compose.yml       # Local development setup
-├── README.md                # This file
-├── .env                     # Environment variables (create locally)
-├── data/
-│   ├── matches.csv          # Match-level data (if using real data)
-│   ├── deliveries.csv       # Ball-by-ball data (if using real data)
-│   └── precomputed/         # Cached statistics
-└── assets/                  # Team logos, custom CSS
-```
-
 ## 🎯 Key Modules
 
 ### 1. Season Overview
@@ -165,19 +132,6 @@ ipl_dashboard/
 - Venue heatmap
 - Form meter (last 5 innings)
 
-### 4. ML Predictions
-- Select two teams and venue
-- XGBoost probability prediction
-- Probability bars (e.g., "CSK 62% | MI 38%")
-- Feature importance visualization
-- Venue advantage insights
-
-### 5. Dream XI Builder
-- Role-based filtering
-- Strike rate and average sliders
-- Auto-build optimization
-- Team balance radar
-- CSV export
 
 ## 📈 Analytics Capabilities
 
@@ -191,11 +145,6 @@ ipl_dashboard/
 - Match winner probability (XGBoost model)
 - Win probability curves (logistic regression)
 - Player similarity search (cosine similarity)
-
-**Prescriptive Analytics:**
-- Dream XI auto-optimization
-- Team balance radar
-- Role-based recommendations
 
 ## ⚡ Performance Optimization
 
